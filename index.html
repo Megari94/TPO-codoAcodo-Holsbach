@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PIZZERIA X</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<!-- Esto es el Navbar -->
+
+
+<div class="w3-top">
+  
+  <nav>
+      <div class="w3-bar w3-xlarge w3-black  w3-hover-opacity-off" id="myNavbar">
+        
+        
+          <a class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"></a>
+          <a href="#" class="w3-bar-item w3-button">INICIO</a>
+          <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+          <a href="#about" class="w3-bar-item w3-button">NOSOTROS</a>
+          <a href="#contacto" class="w3-bar-item w3-button">CONTACTO</a>
+          <a href="#proxi" class="w3-bar-item w3-button">Proximamente</a>
+        
+        
+      </div>
+  </nav>
+ </div>
+
+  
+
+  
+<!-- Header con imagen-->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Abierto desde 8pm a 1am</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><br>PIZZERIA X</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b><br>PIZZERIA X</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Mira aqui el menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">EL MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Aperitivos');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Aperitivos</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebidas</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Margarita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$950</span></h1>
+      <p class="w3-text-grey">Tomates frescos, muzzarela, albaca y ajo</p>
+      <hr>
+   
+      <h1><b>4 Quesos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1100</span></h1>
+      <p class="w3-text-grey">Muzzarela, parmesano, roquefort y feta </p>
+      <hr>
+      
+      <h1><b>Panceta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1300</span></h1>
+      <p class="w3-text-grey">Muzzarela, panceta dorada, champignones y cebolla gratinada</p>
+      <hr>
+
+      <h1><b>Hawaiana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1300</span></h1>
+      <p class="w3-text-grey">Tomates frescos, muzzarela, anana grillado, panceta, albaca</p>
+      <hr>
+
+      <h1><b>Diabla</b> <span class="w3-tag w3-red w3-round">Picante!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$1300</span></h1>
+      <p class="w3-text-grey">muzzarela, pepporoni picante, chorizo colorado, lomo en tiras</p>
+      <hr>
+
+      <h1><b>Rellena</b> <span class="w3-tag w3-grey w3-round">Novedad</span><span class="w3-right w3-tag w3-dark-grey w3-round">$1300</span></h1>
+      <p class="w3-text-grey">masa rellena de pollo con una cobertura de muzzarela y cebollas caramelizadas</p>
+    </div>
+
+    <div id="Aperitivos" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Mini Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$560</span></h1>
+      <p class="w3-text-grey">Salsa de la casa, muzzarela, parmesano, carne cortada a cuchillo</p>
+      <hr>
+   
+      <h1><b>Bastones de Muzzarela</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$500</span></h1>
+      <p class="w3-text-grey">Porcion de bastoncitos horneados</p>
+      <hr>
+      
+      <h1><b>Papas clasicas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$450</span></h1>
+      <p class="w3-text-grey">Porcion de papas fritas clasicas</p>
+      <hr>
+
+      <h1><b>Papas con cheddar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$550</span></h1>
+      <p class="w3-text-grey">Papas fritas con cheddar gratinado</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Gaseosa Cola</b> <span class="w3-tag w3-grey w3-round">Varias marcas</span><span class="w3-right w3-tag w3-dark-grey w3-round">$320</span></h1>
+      <p class="w3-text-grey">Opcional hielo</p>
+      <hr>
+   
+      <h1><b>Jugos naturales</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$220</span></h1>
+      <p class="w3-text-grey">naranja, mandarina o pomelo</p>
+      <hr>
+      
+      <h1><b>Cerveza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$180</span></h1>
+      <p class="w3-text-grey">lata de cerveza rubia</p>
+      <hr>
+      
+      <h1><b>Vino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$380</span></h1>
+      <p class="w3-text-grey">tinto, rosado o blanco</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!--Container horarios y datos -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Nosotros</h1>
+    <p>Somos un grupo de trabajo que buscamos la perfección del producto que ofrecemos. Nos caracterizamos por tener una tendencia a sabores italianos y nacionales.
+        Nuestra política es conseguir la mejor calidad utilizando la materia prima al natural sin conservantes ni aditivos perjudiciales para la salud, desde la salsa en fruta hasta la masa casera, horneado todo con leña natural y ahumado</p>
+    <p><strong>El Chef?</strong> Sr. Jose Alfonso<img src="chef.png" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Orgullosos de nuestros productos.</p></a>
+    
+    <h1><b>Horarios</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Lunes CERRADO</p>
+        <p>Martes 20hs a 00hs</p>
+        <p>Miercoles 20hs a 00hs</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Jueves 20hs a 00hs</p>
+        <p>Viernes 20hs a 1hs </p>
+        <p>Sabado 20hs a 1hs</p>
+        <p>Domingo 20hs a 1hs</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- Contacto -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contacto">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px" >Contacto</h1>
+    <p>Encuentranos en la misma direccion de siempre o llamanos al 4485599</p>
+    <p><span class="w3-tag">HEY!</span> Ofrecemos servicio de catering para tus fiestas! Consultanos por los menus especiales festivos.</p>
+    <p class="w3-xxlarge"><strong>Reserva</strong> una mesa, consultas sobre menus especiales o envianos un mensaje:</p>
+    <form id="form1"   target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name" name="nombre" ></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Cuantas personas" required name="People" name="personas"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Dia y hora" required name="date" value="2022T20:00" name="fecha"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje" required name="Message" name="mensaje"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit" onclick="boton()">ENVIAR MENSAJE</button></p>
+    </form>
+  </div>
+</div>
+<!--galeria con imagenes de hamburguesas -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contacto">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px" id="proxi" >Falta menos para las nuevas <b>delicias!</b></h1>
+    <div class="contenedor">
+                
+      <div class="contenedor-galeria">
+          <img src="1.png" class="img-galeria" alt="">          
+          <img src="2.png" class="img-galeria" alt="">
+          <img src="3.png" class="img-galeria" alt="">
+          <img src="4.png" class="img-galeria" alt="">
+          <img src="5.png" class="img-galeria" alt="">
+          <img src="6.png" class="img-galeria" alt="">
+          
+         
+      </div>
+  </div>
+  </div>
+</div>
+
+ 
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p><a href="https://www.instagram.com/" title="Instagram" target="_blank" >
+    <img src="insta.png" style="width:100px" alt="Instagram">
+  </a></p>
+  
+</footer>
+
+<script src="main.js"> 
+ 
+</script>
+
+</body>
+</html>   
