@@ -10,44 +10,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 
 
 
-.contenedor-galeria{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 30px;
-}
-
-.img-galeria{
-  width: 30%;
-  display: block;
-  margin-bottom: 15px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, .6);
-  cursor: pointer;
-  
-}
 
 
 
-
-input {
-  display: none;
-}
-label {
-  box-sizing: border-box;
-  display: inline-block;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  font-weight: bold;
-  text-align: center;
-  user-select: none;
-}
-
-.my-mini-Navbar{
-  display: flex;
-}
 
 
 
