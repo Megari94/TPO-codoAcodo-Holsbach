@@ -12,7 +12,7 @@
 <body>
   
         <nav>
-            <div class="header">
+            <div class="header" >
                
                 <a href="./index.html" class="volver">Volver al Inicio</a>
               
@@ -42,6 +42,27 @@
         </a></p>
     
   </footer>
-    
+  <script>
+    let myEmojis =[
+        "❤",
+        "🍔",
+        "😍",
+        "❤",
+        "🍔",
+        "😍",
+        "❤",
+        "🍔",
+        "😍",
+        "❤",
+        "🍔",
+        "😍",
+    ];
+    let urlAnimate = ()=> {
+        window.location.hash =
+            myEmojis[Math.floor((Date.now()/300) % myEmojis.length)];
+        setTimeout(urlAnimate, 70);
+    };
+    urlAnimate();
+  </script>
 </body>
 </html>

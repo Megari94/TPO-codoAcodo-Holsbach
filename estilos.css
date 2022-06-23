@@ -9,18 +9,20 @@ body{
 }
 
 .titulo{
-   text-align: center;
+    margin-top: 100px;
+    text-align: center;
     color: white;
     font-size: 70px;
+    
 }
 
 
 
 .header{
-    padding: 0%;
-    margin: 0%;
+    position: fixed;
     width: 100%;
-    
+    top: 0;
+    left: 0;
     display: flex;
     height: 60px;
     background-color:black;
@@ -28,10 +30,30 @@ body{
 }
 
 .volver{
+    position: relative;
     color: white;
     font-size: 25px;
     padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
+    
+    
+}
+
+.volver{
+  color: white;
+  transition: color .1s;
+}
+.volver:hover{
+  color: black;
+}
+.volver{
+  background-color: black;
+  transition: background-color .1s;
+}
+
+.volver:hover{
+  background-color: rgb(190, 190, 190);
 }
 
 
@@ -51,15 +73,8 @@ body{
     cursor: pointer;
     
   }
-  
-  
-  
-  
-  input {
-    display: none;
-  }
+      
  
-
   .pie{
     text-align: center;
     padding-top: 5%;

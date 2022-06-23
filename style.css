@@ -10,10 +10,87 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 
 
 
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+  background-color:black;
+  line-height: 60px;
+}
+
+.volver{
+  position: relative;
+  color: white;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  text-decoration: none;
+  
+  
+}
+
+.volver{
+color: white;
+transition: color .1s;
+}
+.volver:hover{
+color: black;
+}
+.volver{
+background-color: black;
+transition: background-color .1s;
+}
+
+.volver:hover{
+background-color: rgb(190, 190, 190);
+}
 
 
 
+#toggler {
+  
 
+  display: none;
+}
+
+@media screen and (max-width:600px) {
+  .volver{
+    width: 100%;
+    max-height: 0;
+    flex-direction: column;
+    overflow: hidden; 
+    align-items: center;
+    
+    
+    
+  }
+ 
+  .mas{
+    margin-left: 10px;
+    display: inline;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    
+  
+  }
+
+  .volver label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+
+  #toggler:checked ~ .volver {
+    max-height: 100%;
+  }
+}
 
 
 
