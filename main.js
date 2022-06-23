@@ -14,6 +14,6 @@ function openMenu(evt, menuName) {
   }
   document.getElementById("myLink").click();
 
-function boton() {  
-   alert("Hola!!! tu mensaje ha sido recibido");
-}
+
+
+
