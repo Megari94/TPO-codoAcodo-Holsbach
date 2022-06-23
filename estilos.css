@@ -80,6 +80,7 @@ body{
     padding-top: 5%;
     background-color:black;
     line-height: 187px;
+    
 
   }
 
@@ -157,3 +158,8 @@ body{
       height: 50px; 
      }
   
+     @media screen and (max-width:550px) {
+      form{
+        width: 100%;
+      }
+    }

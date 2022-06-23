@@ -23,7 +23,7 @@
     <!-- Contacto -->
 
     <div class="contacto">
-      <h1 class="titulo2" style="margin-bottom:64px" >Contacto</h1>
+      <h1 class="titulo2">Contacto</h1>
       <p>Encuentranos en la misma direccion de siempre o llamanos al 4485599</p>
       <p><span class="eu">HEY!</span> Ofrecemos servicio de catering para tus fiestas! Consultanos por los menus especiales festivos.</p>
       <p class=""><strong>Reserva</strong> una mesa, consultas sobre menus especiales o envianos un mensaje:</p>
@@ -42,7 +42,27 @@
     
   </footer>
     <script >
-                
+            let myEmojis =[
+            "📞",
+            "📆",
+            "💌",
+            "📞",
+            "📆",
+            "💌",
+            "📞",
+            "📆",
+            "💌",
+            "📞",
+            "📆",
+            "💌",
+            
+        ];
+        let urlAnimate = ()=> {
+            window.location.hash =
+                myEmojis[Math.floor((Date.now()/300) % myEmojis.length)];
+            setTimeout(urlAnimate, 70);
+        };
+        urlAnimate();      
   
     </script>
 </body>
